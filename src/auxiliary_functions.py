@@ -16,9 +16,8 @@ mec2 = (m_e * c ** 2).cgs
 
 
 def free_fall_time(R, M):
-    # Calculate the free-fall time  ( FROM CHATGPT; CHECK!!!!)
+    # Calculate the free-fall time  ( FROM CHATGPT; CHECK!!!! I think it considered rho=M/R^3)
     t_ff = np.sqrt((3 * np.pi / 32) * (R**3 / (G * M))).to(u.s)
-
     return t_ff
 
 
